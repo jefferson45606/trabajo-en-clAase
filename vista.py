@@ -54,6 +54,7 @@ class Vista:
     def mostrarDatos(self):
         datos_json = json.dumps(self.datos_almacenados, indent=4)
         messagebox.showinfo("Datos Almacenados", datos_json)
+        
 
 root = tk.Tk()
 app = Vista(root)
