@@ -4,7 +4,9 @@ from tkinter import messagebox
 import json
 
 class Vista:
-    def __init__(self, root):
+    def __init__(self, root, controlador):
+        self.controlador = controlador
+        
         self.root = root
         self.root.title("Gestión de Datos Personales")
 
@@ -57,5 +59,6 @@ class Vista:
         
 
 root = tk.Tk()
-app = Vista(root)
+controlador = Controlador()
+app = Vista(root, controlador)
 root.mainloop()
