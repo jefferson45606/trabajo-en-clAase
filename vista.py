@@ -46,6 +46,7 @@ class Vista:
             "edad": self.edad_entry.get(),
             "sexo": self.sexo_entry.get()
         }
+        return datos_persona
         
         self.datos_almacenados.append(datos_persona)
         messagebox.showinfo("Información", "Datos guardados correctamente")
@@ -57,6 +58,3 @@ class Vista:
 root = tk.Tk()
 app = Vista(root)
 root.mainloop()
-
-
-   
